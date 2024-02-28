@@ -1,0 +1,6 @@
+# Activar el módulo mod_rewrite
+RewriteEngine On
+
+# Redireccionar todas las URLs al archivo index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
